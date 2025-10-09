@@ -1,0 +1,110 @@
+You said:
+how to take array value from user in js 
+You said:
+// Online Javascript Editor for free
+// Write, Edit and Run your Javascript code using JS Online Compiler
+
+let n=parseFloat(prompt("enter the number of student \t"));
+let arr=[];
+for(let i=0;i<n;i++){
+    arr[i]=parseInt(prompt("enter the scores \t"));
+    
+}
+arr.forEach(val=>{if (val<0 && val<42) {
+    console.log("FAIL");
+}
+else {
+    console.log("PASS")
+}) what is the err
+You said:
+whats wrong ? n=float(input("enter the no of students"));
+arr=[];
+for i in range(0,n):
+    arr[i]=print("enter the score of "+i"\t student" );
+    
+    
+ print(arr);
+You said:
+n = int(input("Enter the number of students: "))
+arr = []
+
+for i in range(n):
+    score = int(input("Enter the score of " + str(i+1) + " student: "))
+    arr.append(score)
+
+print("All scores:", arr)
+for i in range(n):
+    if arr[i]<0 || arr[i]<39 :
+        print("FAIL");
+    else :
+        print("PASS"); agian err
+You said:
+see but on java js +i in js we use like hi there and var but in python we need to convert to str(i+1)
+You said:
+let i = 1;
+console.log("Hi there student "  i); // Works directly does it work
+You said:
+how to write same code in java port "java.util.Scanner"
+
+class Main {
+    public static void main(String[] args) {
+        System.out.println("Try programiz.pro");
+        Scanner sc=new Scanner(System.in);
+        int n=sc.nextInt();
+        int arr[]=
+    }
+}
+You said:
+for (int score : arr) {
+            System.out.print(score + " ");
+        } ididnt understand this
+You said:
+issue here import java.util.Scanner;
+
+class Main {
+    public static void main(String[] args) {
+        System.out.println("Try programiz.pro");
+        Scanner sc=new Scanner(System.in);
+                int n=sc.nextInt();
+
+        System.out.println("enter the value of n"+n);
+        int[] arr=new int[n];
+        for(int i=0 ;i<n;i++){
+            int score=sc.nextInt();
+            int arr[i]=score;
+            
+
+        }
+                System.out.println(arr);
+
+
+    }
+}
+You said:
+// Online Java Compiler
+// Use this editor to write, compile and run your Java code online
+import java.util.Scanner;
+
+class Main {
+    public static void main(String[] args) {
+        System.out.println("Try programiz.pro");
+        Scanner sc=new Scanner(System.in);
+                int n=sc.nextInt();
+
+        System.out.println("enter the value of n"+n);
+        int[] arr=new int[n];
+        for(int i=0 ;i<n;i++){
+            int score=sc.nextInt();
+             arr[i]=score;
+            
+
+        }
+                System.out.println(arr);
+
+
+    }
+} err? in printing
+You said:
+make notes of all above like everypoint in pdf above one
+
+ChatGPT can make mistakes. Check important info
