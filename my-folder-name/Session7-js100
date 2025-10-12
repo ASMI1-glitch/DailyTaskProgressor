@@ -1,0 +1,75 @@
+Ah! Now I see exactly what’s happening — your code **still calculates wrong values** because of this line inside your function:
+
+```python
+sum = sum + i
+```
+
+---
+
+### 🔹 Problem
+
+* `i` is **the index** (0, 1, 2, …)
+* You want to add the **actual numbers** entered by the user: `a[i]`
+* Right now, you’re adding only 0 + 1 + 2 + 3 + 4 = 10
+* Average = 10 ÷ 5 = 2.0 ✅ matches the output you got
+
+---
+
+### 🔧 Fix
+
+Change your function to add the **elements of the array**:
+
+```python
+def avg(a):
+    total = 0
+    for i in range(len(a)):
+        total = total + a[i]  # <--- use a[i], not i
+    average = total / len(a)
+    return average
+```
+
+---
+
+### ✅ Full Corrected Program:
+
+```python
+print("Try programiz.pro")
+
+n = int(input("Enter the number: "))
+
+def avg(a):
+    total = 0
+    for i in range(len(a)):
+        total += a[i]      # add the actual numbers
+    average = total / len(a)
+    return average
+
+arr = []
+i = 0
+while i < n:
+   num = int(input(f"Enter number {i+1}: "))
+   arr.append(num)
+   i += 1
+
+print("Average:", avg(arr))
+```
+
+---
+
+### 💡 Sample Run
+
+```
+Try programiz.pro
+Enter the number: 5
+Enter number 1: 45
+Enter number 2: 65
+Enter number 3: 56
+Enter number 4: 89
+Enter number 5: 45
+Average: 60.0
+```
+
+---
+
+If you want, I can also show an **even simpler version** using Python’s `sum()` and `len()` in **just 3 lines of logic**.
+Do you want me to do that?
